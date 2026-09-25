@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiMedia Blog</title>
+</head>
+<body>
+    <header>
+        <p><font face="Courier New"><strong>🎬 MANOJKUMAR MEDIA BLOG</strong></font></p>
+        <h1><font face="Georgia">Music I love & the biggest Indian blockbusters, all in one place.</font></h1>
+        <p><font face="Verdana">A sticker-book of sound and cinema: three favourite tracks, followed by a hand-picked trailer watchlist.</font></p>
+        <nav aria-label="Media blog sections">
+            <a href="#songs"><button style="background: rgb(86, 196, 86); border: solid black 2px; border-radius: 15px;
+            padding: 10px 15px;">🎵 Play the Songs</button></a>
+            <a href="#trailers"><button style="background: rosybrown; border: solid black 2px; border-radius: 15px;
+            padding: 10px 15px;">🎬 See the trailers</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="songs">
+            <h2 id="songs-heading"><font face="Georgia">My favourite songs of all time 🕺</font></h2>
+            <p><font face="Verdana">Press play, settle in, and enjoy the soundtrack.</font></p>
+            <ol>
+                    <li>
+                        <h3><font face="Trebuchet MS">Gananayakaya</font></h3>
+                        <audio src="../assets/Gananayakaya Song.mp3" controls preload="metadata">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </li>
+                    <li>
+                        <h3><font face="Trebuchet MS">MCA</font></h3>
+                        <audio src="../assets/MCA - SenSongsMp3.Co.mp3" controls preload="metadata">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </li>
+                    <li>
+                        <h3><font face="Trebuchet MS">Samajavaragamana</font></h3>
+                        <audio src="../assets/Samajavaragamana (Female) - SenSongsMp3.Co.mp3" controls preload="metadata">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </li>
+                </ol>
+        </div>
+
+        <hr>
+
+        <div id="trailers">
+                <h2 id="trailers-heading"><font face="Georgia">A blockbuster trailer pick 🍿</font></h2>
+                <p><font face="Verdana">Starting the watchlist with a celebration of Lord Ganesha.</font></p>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLo0ZAkASJB8yCi0UXNBBlGktfg-LXdaL7NpeZIXUL1w&s=10" alt="Lord Ganesha" width="150" height="350" loading="lazy">
+                    <figcaption><font face="Trebuchet MS"><strong>Lord Ganesha 🙏</strong></font></figcaption>
+                </figure>
+                <video poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsr56IdS6Eyfzt_KnmkTXzcBRAJVZx-xiZ40z7IMCSQQ&s=10" src="../assets/lordganeshatrailer.mp4" width="620" height="350" controls preload="metadata">
+                    Your browser does not support video playback.
+                </video>
+        </div>
+    </main>
+
+    <footer>
+        <font face="Courier New">
+            <hr>
+            <p><small>Made with music, cinema, and a little bit of movie magic.</small></p>
+        </font>
+    </footer>
+</body>
+</html>
+<!--? preload="metadata" tells the browser to load only basic information about the audio or video before the user presses Play.
+
+It may load details such as:
+
+Duration
+Video dimensions
+Basic media information
+It avoids downloading the entire media file immediately, which helps the page load faster and saves data. -->
+
+
+
+<!--? loading="lazy" tells the browser to delay loading the image until it is close to appearing on the screen.
+
+This helps:
+
+Improve initial page loading speed
+Save internet data
+Reduce unnecessary downloads -->
+
+<!--? To set a video as the page background:
+1. Add a muted, autoplaying, looping <video> as the first element inside <body>.
+2. Give it position: fixed, inset: 0, width: 100%, and height: 100%.
+3. Use object-fit: cover so the video fills the screen.
+4. Set a negative z-index on the video and place the page content above it with position: relative.
+-->
